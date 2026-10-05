@@ -93,7 +93,9 @@ node --env-file=.env src/cli.ts --live "解释 Agent loop"
 
 ## 从哪里开始学
 
-从 [第一课：设计并演练一个完整 Agent](docs/lesson-01.md) 开始。第一场练习用 45–60 分钟设计资料研究 Agent，并观察信息缺口和新约束如何改变行动。每周建议投入 6–8 小时，用 [学习记录模板](docs/learning-log-template.md) 保存设计、实现、失败案例和讲解证据，再按 [迭代路线](docs/roadmap.md) 增加功能。
+从 [第一课：沿源码追踪一次完整 Agent 任务](docs/lesson-01.md) 开始。首场用 90–110 分钟沿 DSH 追踪完整任务，对照 Codex harness 的工具分发、结果回写和结束职责，再观察一次运行。源码推演、实际执行的 Mock 轨迹和真实模型轨迹分别记录。
+
+每周安排 6 小时必修与 2 小时选修，按 [10 周迭代路线](docs/roadmap.md) 验证并扩展现有工具、HTTP、SQLite、trace 与取消能力，逐步完成带引用、可评测的 Agent 应用。以 TS / Vue 为核心，Python / FastAPI 与 MCP 选一项做薄桥接。用 [学习记录模板](docs/learning-log-template.md) 保存源码理解、实现、验收结果和讲解证据。课程的岗位依据见 [JD 对齐说明](docs/jd-alignment-2026-10-05.md)，固定源码版本与阅读位置见 [源码学习指南](docs/source-study.md)。
 
 需要核对执行细节时，可以查看 [Agent loop 运行机制参考](docs/runtime-loop-reference.md)。
 
