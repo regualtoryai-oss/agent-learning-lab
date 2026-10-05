@@ -1,0 +1,10 @@
+node_modules/
+runtime/
+.env
+.env.*
+!.env.example
+coverage/
+*.log
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm

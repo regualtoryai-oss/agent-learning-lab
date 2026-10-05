@@ -1,0 +1,19 @@
+{
+  "name": "agent-learning-lab",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "一个离线可运行、逐步学习的 TypeScript Agent 作品集起点",
+  "engines": { "node": ">=24.12.0 <25" },
+  "scripts": {
+    "demo": "node src/cli.ts",
+    "start": "node src/server-main.ts",
+    "test": "node --test test/*.test.ts",
+    "check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  },
+  "license": "MIT"
+}
