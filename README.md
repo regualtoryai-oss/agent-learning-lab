@@ -1,6 +1,6 @@
 # Agent Learning Lab
 
-一个从执行机制开始的 TypeScript Agent 学习作品：先看懂每一轮发生什么，再逐步接入真实模型、评测和界面。适合已有 JS / TS 基础、正在补后端与 Agent 工程能力的学习者。
+一个围绕完整任务逐步开发的 TypeScript Agent 学习作品：从目标、工具、动态决策、上下文和验收开始，再接入真实模型、评测和界面。适合已有 JS / TS 基础、正在学习 Agent 应用开发的学习者。
 
 **当前版本是 AI 协作生成的教学起步代码。运行成功不代表作者已经独立掌握 Agent 开发。** 独立讲解、变式练习和自己的提交记录，是后续作品集证据。
 
@@ -93,9 +93,9 @@ node --env-file=.env src/cli.ts --live "解释 Agent loop"
 
 ## 从哪里开始学
 
-从 [第一课：读懂并修改 Agent loop](docs/lesson-01.md) 开始，每周建议投入 6–8 小时。用 [学习记录模板](docs/learning-log-template.md) 保存独立实现、失败案例和讲解证据。完成第一课后，再按 [迭代路线](docs/roadmap.md) 增加功能。
+从 [第一课：设计并演练一个完整 Agent](docs/lesson-01.md) 开始。第一场练习用 45–60 分钟设计资料研究 Agent，并观察信息缺口和新约束如何改变行动。每周建议投入 6–8 小时，用 [学习记录模板](docs/learning-log-template.md) 保存设计、实现、失败案例和讲解证据，再按 [迭代路线](docs/roadmap.md) 增加功能。
 
-配套应用作品：[AI Girlfriend / Companion Agent](https://github.com/regualtoryai-oss/ai-girlfriend)。本仓库用来读懂和练习底层执行机制，再把已验证的改进带回应用；两个项目共用每周 6–8 小时的学习预算，不要求分别投入两份时间。
+需要核对执行细节时，可以查看 [Agent loop 运行机制参考](docs/runtime-loop-reference.md)。
 
 | 文件 | 学习问题 |
 | --- | --- |
