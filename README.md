@@ -93,11 +93,13 @@ node --env-file=.env src/cli.ts --live "解释 Agent loop"
 
 ## 从哪里开始学
 
-从 [第一课：沿源码追踪一次完整 Agent 任务](docs/lesson-01.md) 开始。首场用 90–110 分钟沿 DSH 追踪完整任务，对照 Codex harness 的工具分发、结果回写和结束职责，再观察一次运行。源码推演、实际执行的 Mock 轨迹和真实模型轨迹分别记录。
+从 [第一课：跑通一个可核验的资料助手](docs/lesson-01.md) 开始。首场约 90 分钟，理解普通聊天、固定工作流与自主工具 Agent 的区别，复用现有 adapter 和只读工具运行实际模型任务，再检查答案、依据与失败原因。真实模型配置不具备时如实保留待完成项，Mock 测试不代替模型基线。
 
-每周安排 6 小时必修与 2 小时选修，按 [10 周迭代路线](docs/roadmap.md) 验证并扩展现有工具、HTTP、SQLite、trace 与取消能力，逐步完成带引用、可评测的 Agent 应用。以 TS / Vue 为核心，Python / FastAPI 与 MCP 选一项做薄桥接。用 [学习记录模板](docs/learning-log-template.md) 保存源码理解、实现、验收结果和讲解证据。课程的岗位依据见 [JD 对齐说明](docs/jd-alignment-2026-10-05.md)，固定源码版本与阅读位置见 [源码学习指南](docs/source-study.md)。
+每周安排 6 小时核心练习与 2 小时选修，按 [10 周路线](docs/roadmap.md) 围绕同一个资料助手完善接口、上下文、检索引用、评测、Vue 界面与运行治理。以 TS / Node.js / Vue 为核心，Python / FastAPI 与 MCP 可选一项做小型扩展。每课按“工作问题 → 必要概念 → AI 辅助实现 → 实际验证 → 讲解取舍”推进，可以使用 AI 编码和排障；能力证据来自自己核验的方案和实际结果。
 
-需要核对执行细节时，可以查看 [Agent loop 运行机制参考](docs/runtime-loop-reference.md)。
+用 [学习记录模板](docs/learning-log-template.md) 保存实现、验收与讲解证据，按 [岗位能力与面试证据](docs/job-readiness.md)核对进展。岗位依据见 [JD 对齐说明](docs/jd-alignment-2026-10-05.md)。DSH / Codex 用于工作机制与设计对照，[设计与源码参考](docs/source-study.md)和 [Agent loop 运行机制参考](docs/runtime-loop-reference.md)按需选读，不要求逐个研究函数或手写完整 loop。
+
+遇到具体实现问题时，可查本仓库对应位置：
 
 | 文件 | 学习问题 |
 | --- | --- |
